@@ -1,0 +1,88 @@
+Exploratory Testing Charter Purpose:
+	To validate that the Wordpress reactive Theme and site content works as expected on desktop and mobile browsers.
+
+Testers: Rob Adlers
+
+Date: 2020-07-28
+
+Timebox or Duration: 30 minutes
+
+Target or Scope:
+	- robadlers.com
+	- all published content - blogs, pages, including embedded content
+	- Browsers
+		- Windows 10 Desktop browsers
+			- Edge - 84.0.522.44 (Official Build)(64-bit)
+			- Firefox 78.0.2 (64-bit)
+			- Chrome 84.0.4147.89 (Official Build) (64-bit)
+		- Android Browsers (Samsung S8)
+			- Chrome 84.0.4147.105
+			- Firefox 68.11.0
+			- Samsung 12.0.1.47
+		- iPad Mini
+			- Safari 9.3.5
+
+References:
+
+Charter:
+	To evaluate reactive interface against content on www.robadlers.com for desktop, mobile and tablet devices
+
+Session Notes:
+	- Firefox (Desktop)
+		- Testing all pages and links on website
+			- Tested Connect with Me links - ** Skype
+				- Recommendation: Add in an Instagram link
+		- Tested RSS Feed link - OK
+		- Tested blog entry - Featured image, content all good - OK
+		- Tested Share this links for Twitter and Facebook - OK
+		- Tested all menu links - OK
+			- Recommendation - Sub pages under Media should get featured images where they are not displaying.
+		- Tested Search input - OK
+			- Recommendation - two search areas. One beside the menu, the other in the left side bar. Remove the menu one, as it's disruptive to the page layout (inserts above page header).
+		- Tested Google Drive links - ** Need to move the documents on to the domain. Requires log into Google Drive. Not a great experience.
+	- Chrome (Desktop)
+		- Checking for content abnormalities (links, images, layout)
+			- ** Images not showing for blogs / pages - check security options, maybe something Chrome specific, or site security maybe Chrome specific
+			- ** Embedded media, same as Images.
+			- ** Privacy and Cookie agreement popup only appeared after clicking on a menu option. Should be right as you access the site.
+			- ** RSS Feed widget heading text is larger than in Firefox. - NOT FIXING
+			- ** Another Bridge Shattered link is using (Same). Should be a new tab / window.
+			- ** Same for M.U.L.E. Redux
+			- ** Same for The watch Youtube video link
+			- ** Same for Facebook group link
+	- MS Edge (Desktop)
+		- Checking for content abnormalities (links, images, layout)
+			- Privacy and Cookie popup - OK
+			- ** RSS Feed Widget title appears the same as Chrome (same engine)
+			- ** Because this browser is Chrome based, it's having the same issues
+	- Firefox (Samsung S8)
+		- Checked for content organization (reactive) - OK
+		- Checked for media images, etc. - OK
+		- Cookie and privacy agreement check - OK 
+	- Samsung Browser (Samsung S8)
+		- Checked for content organization (reactive) - OK
+		- Checked for media images, etc. - OK
+		- Cookie and privacy agreement check - OK 
+		- Menu hamburger is a different colour combo - Was in Dark mode - Changed to light mode - OK
+	- Safari
+		- Checked for content organization (reactive) - OK
+		- Checked for media images, etc. - OK
+		- Cookie and privacy agreement check - OK 
+		- Menu hamburger is a different colour combo - old browser, not updatable - OK	
+
+Issues Found: (** indicates where issue was found)
+		
+Conclusion:
+	- Testing Status:  Fail until Chrome based browsers are supporting media displays.
+
+Action Items:
+	- Critical
+		- Check security settings for website to see if there is a Chrome specific setting enabled where it shouldn't be. - FIXED/VERIFIED
+	- High
+		- Look into why Cookie acceptance didn't show up in Chrome when linking to the site - FIXED/VERIFIED
+		- Move resume documents to the domain - FIXED/VERIFIED
+	- Medium
+		- Correct Links to display in a new tab/window - FIXED/VERIFIED
+	- Low
+		- Add an Instagram link if there is one availabe with the Plug-in - FIXED/VERIFIED
+		
